@@ -22,3 +22,19 @@ function getCustomer(id) {
         }, 4000);
     });
 }
+
+function getTopMovies() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(['movie1', 'movie2'])
+        }, 4000);
+    });
+}
+
+function sendEmail(email, movies) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve();
+        }, 4000);
+    })
+}
