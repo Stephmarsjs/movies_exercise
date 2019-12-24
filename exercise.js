@@ -10,3 +10,15 @@ getCustomer(1, (customer) => {
     }
 });
 
+function getCustomer(id) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve({
+              id: 1,
+              name: 'Mosh Hamedani', 
+              isGold: true,
+              email: 'email'
+          });  
+        }, 4000);
+    });
+}
